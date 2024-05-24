@@ -1,0 +1,7 @@
+*.xlsx
+*.spec
+build/
+dist/
+.venv/
+.idea/
+EXEWIN10/

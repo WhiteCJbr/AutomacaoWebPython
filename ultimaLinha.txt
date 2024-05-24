@@ -1,0 +1,1 @@
+A última linha visitada foi a linha 1000 !
