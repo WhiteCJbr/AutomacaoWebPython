@@ -6,7 +6,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.chrome.service import Service
 import numpy as np
 from time import sleep
-import sys
 import datetime
 import os
 from openpyxl import Workbook
@@ -42,7 +41,7 @@ def getData(linhas):
         planilha = pd.read_excel('database.xlsx', sheet_name='db', dtype='object', nrows=299, skiprows=linhas-1,
                                  header=None)
     except Exception as e:
-        print(f"[*] Falha na leitura da base de dados. Utilize o --help para ajuda")
+        print(f"[*] Falha na leitura da base de dados.")
         print(f"[-] Erro: {e}")
         exit()
 
